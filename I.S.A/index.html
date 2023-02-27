@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="https://kit.fontawesome.com/9151136d1a.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #E5F2FF;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        a:hover {
+            color: #59b2b7;
+        }
+
+        li {
+            display: inline;
+            list-style: none;
+
+        }
+
+        ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav {
+            background-color: #E5F2FF;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .active {
+            color: #59b2b7;
+        }
+        .searchbar {
+            margin: 10%;
+            padding: 2%;
+            display: block;
+            text-align: center;
+        }
+
+        input {
+            width: 60%;
+            padding: 10px;
+            border: 1px #5987B7 solid;
+            border-radius: 7px;
+            outline: none;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            background-color: #5987B7;
+            color: #E5F2FF;
+            cursor: pointer;
+        }
+
+        .fa-facebook {
+            color: #3B5998;
+            font-size: 30px;
+        }
+
+        .fa-instagram {
+            color: #E1306C;
+            font-size: 30px;
+        }
+
+        .fa-twitter {
+            color: #1DA1F2;
+            font-size: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800;
+            color: #c2e2c3;
+        }
+
+        .content {
+            margin: 10%;
+            padding: 2%;
+            display: block;
+            text-align: justify;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            color: #5987B7;
+        }
+
+        .social-media {
+            margin: 10%;
+            padding: 2%;
+            display: block;
+            text-align: center;
+        }
+
+        .fa-search {
+            color: #E5F2FF;
+        }
+
+        .fa-search:hover {
+            color: #59b2b7;
+        }
+        section {
+            height: 100vh;
+        }
+        .one{
+            scroll-snap-align: start;
+            scroll-snap-type: y mandatory;
+        }
+        .two{
+            scroll-snap-align: start;
+            scroll-snap-type: y mandatory;
+        }
+        .three{
+            scroll-snap-align: start;
+            scroll-snap-type: y mandatory;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="one">
+    <nav>
+        <img src="upsearch-logo.png" width="110" height="90">
+        <ul>
+            
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav><br>
+    <div class="searchbar">
+        <input type="text" placeholder="Search What You Would Like To Know?">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+    </section>
+    <section class="two">
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo quis harum distinctio dolore dolorum molestias
+            ratione nam aliquam voluptas ab? Perferendis alias fugiat
+            ex voluptatibus iste esse tempore neque quam.
+        </p>
+    </div>
+</section>
+<section class="three">
+    <div class="social-media">
+        <h1>Follow Us On Social Media</h1>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+</section>
+</body>
+
+</html>

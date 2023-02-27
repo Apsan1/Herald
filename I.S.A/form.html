@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        body{
+            text-align: justify;
+            background-color: #FBEAFF;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .form {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #CFCEEB;
+            color: #4E4351;
+            font-weight: 500;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding: 2%;
+            line-height: 23px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        }
+        ::placeholder{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        select{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        button {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            background-color: #5987B7;
+            font-weight: 550;
+            color: #E5F2FF;
+            padding: 2%;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        h1 {
+            font-weight: 800;
+            text-align: center;
+            color: #4CAF50;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Herald College Kathmandu Survey Form</h1>
+    <div class="form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age" placeholder="Enter your age">
+        <label>Which occupation describes you best?</label>
+        <select name="occupation" id="occupation">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Other</option>
+        </select>
+            <label>Would you recommend Herald College Kathmandu to a friend</label>
+            <input type="radio" name="recommend" id="yes" value="yes"> Yes <br>
+            <input type="radio" name="recommend" id="no" value="no"> No <br>
+            <input type="radio" name="recommend" id="maybe" value="maybe"> Maybe <br>
+            <label>What languages and framework do you know?</label>
+            <input type="checkbox" name="language" id="C" value="C"> C <br>
+            <input type="checkbox" name="language" id="C++" value="C++"> C++ <br>
+            <input type="checkbox" name="language" id="Java" value="Java"> Java <br>
+            <input type="checkbox" name="language" id="Python" value="Python"> Python <br>
+            <input type="checkbox" name="language" id="JavaScript" value="JavaScript"> JavaScript <br>
+            <input type="checkbox" name="language" id="React" value="React"> React <br>
+            <input type="checkbox" name="language" id="Angular" value="Angular"> Angular <br>
+            <input type="checkbox" name="language" id="Django" value="Django"> Django <br>
+            <input type="checkbox" name="language" id="Spring" value="Spring"> Spring <br>
+        <label>Any comments or suggestions</label>
+        <textarea name="comment" id="comment" cols="59" rows="3"></textarea>
+        <button type="submit" id="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
