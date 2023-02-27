@@ -55,7 +55,7 @@
             text-align: center;
         }
 
-        input {
+        #searchbar {
             width: 60%;
             padding: 10px;
             border: 1px #5987B7 solid;
@@ -76,17 +76,19 @@
 
         .fa-facebook {
             color: #3B5998;
-            font-size: 30px;
+            font-size: 60px;
         }
 
         .fa-instagram {
             color: #E1306C;
-            font-size: 30px;
+            font-size: 60px;
+            margin-left: 50px;
         }
 
         .fa-twitter {
             color: #1DA1F2;
-            font-size: 30px;
+            font-size: 60px;
+            margin-left: 50px;
         }
 
         h1 {
@@ -94,6 +96,13 @@
             font-size: 30px;
             font-weight: 800;
             color: #c2e2c3;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800;
+            color: #5ca85f;
         }
 
         .content {
@@ -108,12 +117,17 @@
             font-weight: 500;
             color: #5987B7;
         }
+        span{
+            color: #09dada;
+        }
 
         .social-media {
             margin: 10%;
             padding: 2%;
             display: block;
             text-align: center;
+            letter-spacing: 5px;
+            line-height: 50px;
         }
 
         .fa-search {
@@ -123,20 +137,54 @@
         .fa-search:hover {
             color: #59b2b7;
         }
-        section {
-            height: 100vh;
-        }
         .one{
             scroll-snap-align: start;
             scroll-snap-type: y mandatory;
+            height: 100vh;
         }
         .two{
             scroll-snap-align: start;
             scroll-snap-type: y mandatory;
+            height: 100vh;
         }
         .three{
             scroll-snap-align: start;
             scroll-snap-type: y mandatory;
+            height: 90vh;
+        }
+
+        .form {
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: 100px;
+            padding: 2%;
+            display: block;
+            text-align: center;
+            border: #09dada 1px solid;
+        }
+        input {
+            width: 50%;
+            padding: 5px;
+            border: .5px #5987B7 solid;
+            border-radius: 5px;
+            outline: none;
+            font-size: smaller;
+        }
+
+        textarea {
+            width: 50%;
+            padding: 5px;
+            border: .5px #5987B7 solid;
+            border-radius: 5px;
+            outline: none;
+            font-size: smaller;
+        }
+
+        footer{
+            text-align: center;
+            color: #3B5998;
+            padding: 10px;
+            margin: 10px;
         }
     </style>
 </head>
@@ -147,35 +195,47 @@
         <img src="upsearch-logo.png" width="110" height="90">
         <ul>
             
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav><br>
     <div class="searchbar">
-        <input type="text" placeholder="Search What You Would Like To Know?">
-        <button><i class="fas fa-search"></i></button>
+        <input type="text" id="searchbar" placeholder="Search What You Would Like To Know?">
+        <button><a href="index.html"><i class="fas fa-search"></i></button></a>
     </div>
     </section>
-    <section class="two">
+    <section class="two" id="about">
     <div class="content">
+        <h2>Who are we?</h2><br><br>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Explicabo quis harum distinctio dolore dolorum molestias
-            ratione nam aliquam voluptas ab? Perferendis alias fugiat
-            ex voluptatibus iste esse tempore neque quam.
+            UpSearch is a search engine that helps you find what you are looking for.
+            It is a search engine that is only for saying it it a search engine.
+            It is a concept of what would a serach engine be like if it was made by me
+            as a developer and owner of it. I named it <span>'UpSearch'</span>  because it is connected to
+            my name which is <span>Apsan</span> where <span>'Ap'</span> of my name is reffered to as <span>Up</span> in English.
+            And for the motive and purpose of this search engine is to help people find what
+            they are looking for it has 'Search' in it. So UpSearch is a name where it is 
+            connected to me as a developer and search as a motive.
         </p>
     </div>
 </section>
-<section class="three">
+<section class="three" id="contact">
+    <div class="form">
+        <h1>Get In Touch</h1><br><br>
+            <input type="text" name="name" placeholder="Enter Your Name" required><br><br>
+            <input type="email" name="email" placeholder="Enter Your Email" required><br><br>
+            <textarea name="message" cols="30" rows="10" placeholder="Enter Your Message" required></textarea><br><br>
+            <button type="submit">Submit</button>
+    </div>
     <div class="social-media">
-        <h1>Follow Us On Social Media</h1>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <h2>Follow Us On Social Media</h2>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
     </div>
 </section>
 </body>
-
+<footer>@Apsan, Herald College Kathmandu</footer>
 </html>
